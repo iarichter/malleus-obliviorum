@@ -39,3 +39,12 @@
     justify-content: space-between;
     padding: 0 0px;
   }
+.md-typeset .admonition.info, .md-typeset details.info {
+  border-color: #FFA724
+}
+.md-typeset .info>.admonition-title:before, .md-typeset .info>summary:before {
+  background-color: #FFA724;
+}
+.md-typeset .info>.admonition-title:after, .md-typeset .info>summary:after {
+  color: #FFA724;
+}

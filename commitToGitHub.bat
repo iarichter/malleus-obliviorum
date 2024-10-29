@@ -1,5 +1,5 @@
 @echo off
-echo Committing with message: %1
+echo Committing with message: %*
 git add .
-git commit -m "%1"
+git commit -m "%*"
 git push origin main
