@@ -12,19 +12,31 @@ home for my thoughts, notes, ideas, and concepts
 === "areas"
     * [malleus obliviorum](areas/malleusobliviorum.md)
     * physical systems
-    * the house
+    * home
+    * [music](areas/music.md)
 
 === "resources"
     * [the CODE framework](resources/code.md)
-    * [using PARA for content strucutre](resources/para.md)
+    * [using PARA for content structure](resources/para.md)
+    * [Mkdocs and Markdown](resources/mkdocs-material.md)
 
 === "archive"
+## create new .md file
 
-## knowledge by category???
-===! "category 1"
+<div class="md-button-holder">
+<a class="md-button"
+    href="https://github.com/iarichter/malleus-obliviorum/new/main/docs/resources?filename=XXXXXX.md&value=---%0D%0Atitle:%20XXXX%0D%0Alayout:%20template%0D%0Afilename:%20XXXX.md%0D%0Atags:%0D%0A---%0D%0A"
+    target="_blank">Project</a>
 
-=== "category 2"
+<a class="md-button"
+    href="https://github.com/iarichter/malleus-obliviorum/new/main/docs/areas?filename=XXXXXX.md&value=---%0D%0Atitle:%20XXXX%0D%0Alayout:%20template%0D%0Afilename:%20XXXX.md%0D%0Atags:%0D%0A---%0D%0A"
+    target="_blank">Area</a>
 
-=== "category 3"
+<a class="md-button"
+    href="https://github.com/iarichter/malleus-obliviorum/new/main/docs/resources?filename=XXXXXX.md&value=---%0D%0Atitle:%20XXXX%0D%0Alayout:%20template%0D%0Afilename:%20XXXX.md%0D%0Atags:%0D%0A---%0D%0A"
+    target="_blank">Resource</a>
 
-=== "category 4"
+<a class="md-button"
+    href="https://github.com/iarichter/malleus-obliviorum/new/main/docs/archive?filename=XXXXXX.md&value=---%0D%0Atitle:%20XXXX%0D%0Alayout:%20template%0D%0Afilename:%20XXXX.md%0D%0Atags:%0D%0A---%0D%0A"
+    target="_blank">Archive</a>
+</div>

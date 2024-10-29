@@ -26,3 +26,16 @@
   .md-nav__title {
     font-size: 18px;
   }
+  .md-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 10px; 
+  }
+  .md-button-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+  }

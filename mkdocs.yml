@@ -27,6 +27,9 @@ theme:
         name: Switch to light mode
       primary: custom
       accent: custom
+  features:
+    - content.code.copy
+    - search.suggest
 extra_css:
   - stylesheets/extra.css
 extra:
@@ -36,6 +39,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ianarichter/
 copyright: Copyright &copy; 2024 Ian Richter
+plugins:
+  - search
+  - tags
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -60,3 +66,4 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+

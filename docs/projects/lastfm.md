@@ -9,7 +9,7 @@ tags:
 ---
 
 ## Who:
-A group of people who want to keep up with what everyoe is listening to. 
+A group of people who want to keep up with what everyone is listening to. 
 ## What:
 A way to see everyone's recent scrobbles in one view. A single webpage that displays multiple user's info.
 ## Why:

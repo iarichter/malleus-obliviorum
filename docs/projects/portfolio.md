@@ -8,7 +8,7 @@
 # to do
 * more project pages
     * SNOW<>JIRA integration
-    * sharepoint shennanigans
+    * sharepoint shenanigans
         * custom list stuff
         * PNP search
 * I need visuals for my project pages!

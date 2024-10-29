@@ -1,4 +1,4 @@
-The acronym "CODE" is a four-step method developed by [[Tiago Forte]] to help build a second brain:
+The acronym "CODE" is a four-step method developed by Tiago Forte to help build a second brain:
 * Capture: Keep what's useful and resonates with you
   * What are the recurring themes and questions that I always seem to return to in my work and life?
   * What insightful, high-value, impactful information do I already have access to that could be valuable?
