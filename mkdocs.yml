@@ -1,0 +1,62 @@
+site_name: MALLEUS OBLIVIORUM
+nav:
+  - home: index.md
+  - project showcase:
+    - spotify automations: projects/spotify.md
+    - last.fm user stats: projects/lastfm.md
+    - servicenow > jira automation: projects/snowJira.md
+  - knowledge base: kbindex.md
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    logo: custom/IARcairnfont
+  font: 
+    text: Courier Prime
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: custom
+      accent: custom
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: custom
+      accent: custom
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/iarichter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ianarichter/
+copyright: Copyright &copy; 2024 Ian Richter
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
