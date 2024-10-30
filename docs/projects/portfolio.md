@@ -1,3 +1,10 @@
+---
+title: initial thoughts on this site
+layout: template
+filename: portfolio.md
+tags:
+    - WIP
+---
 # design
 * I want to have my initials as a PNG with transparent background centered, then scroll down slightly to have maybe a couple boxes cover it?
 * also I really like the idea of a monospaced serif font

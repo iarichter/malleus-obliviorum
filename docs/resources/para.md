@@ -1,5 +1,5 @@
 ---
-title: para
+title: PARA
 layout: template
 filename: para.md
 tags:
@@ -7,9 +7,9 @@ tags:
 ---
 
 The acronym "PARA" stands for:  
-projects 
-areas 
-resources 
-archive 
+projects  
+areas  
+resources  
+archive  
 
 and is used by someone creating documentation to quickly sort and categorize content by level of actionablity

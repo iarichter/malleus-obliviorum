@@ -154,6 +154,10 @@ python -m mkdocs serve
 git add .
 git commit -m "Your commit message here"
 git push origin main
+::
+:: OR...just use the bat file I made
+::
+commitToGitHub.bat 'commitYour commit message here' 
 ```
 ### deploying to GitHub
 All handled by GitHub actions with current set up. Should run with every commit to the repo. 
