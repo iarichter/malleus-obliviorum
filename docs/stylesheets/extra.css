@@ -15,6 +15,15 @@
   .md-content__inner h2 {
     line-height: 1;
   }
+
+  .md-typeset h3 {
+    line-height: 1;
+    margin: auto;
+  }
+  .md-typeset h2 {
+    line-height: 1;
+    margin: auto;
+  }
   #home {
     display: none;
   }
@@ -32,7 +41,10 @@
     border-radius: 5px;
     text-align: center;
     flex-grow: 1;
-    margin: 0 10px; 
+    margin: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .md-button-holder {
     display: flex;

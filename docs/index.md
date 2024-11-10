@@ -6,8 +6,9 @@ hello,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or [connect](mailto:ian.a.richter@gmail.com)  
 --IAR
 ## project showcase
+* [servicenow > jira automation](projects/snowJira.md)
 * [spotify playlist scripts](projects/spotify.md)
-* sharepoint data storage clean up
+* [sharepoint storage clean up](projects/sharepoint.md) 
 * [last.fm multiple users stats](projects/lastfm.md)
 ## about me
 * [portfolio ideas](projects/portfolio.md)

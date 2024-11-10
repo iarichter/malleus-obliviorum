@@ -5,6 +5,8 @@ home for my thoughts, notes, ideas, and concepts
 === "projects"
     * [last.fm user stats](projects/lastfm.md)
     * [initial thoughts on this site](projects/portfolio.md)
+    * [sharepoint admin work](projects/sharepoint.md)
+    * [slack migration automation](projects/slack.md)
     * [new Jira project automation from ServiceNow](projects/snowJira.md)
     * [spotify auto playlists](projects/spotify.md)
 
@@ -16,10 +18,13 @@ home for my thoughts, notes, ideas, and concepts
     * [CI/CD](resources/cicd.md)
     * [CODE method](resources/code.md)
     * [markdown and mkdocs notes](resources/mkdocs-material.md)
-    * [para](resources/para.md)
+    * [PARA](resources/para.md)
 
 === "archive"
 
+
+### create new knowledge base page quick links:
+<p>
 <div class="md-button-holder">
 <a class="md-button"
     href="https://github.com/iarichter/malleus-obliviorum/new/main/docs/resources?filename=XXXXXX.md&value=---%0D%0Atitle:%20XXXX%0D%0Alayout:%20template%0D%0Afilename:%20XXXX.md%0D%0Atags:%0D%0A---%0D%0A"
