@@ -11,12 +11,13 @@ home for my thoughts, notes, ideas, and concepts
     * [spotify auto playlists](projects/spotify.md)
 
 === "areas"
-    * [malleus obliviorum](areas/malleusobliviorum.md)
+    * [malleus obliviorum](areas/malleus-obliviorum.md)
     * [music](areas/music.md)
 
 === "resources"
     * [CI/CD](resources/cicd.md)
     * [CODE method](resources/code.md)
+    * [the cult of done](resources/cult-of-done.md)
     * [markdown and mkdocs notes](resources/mkdocs-material.md)
     * [PARA](resources/para.md)
 

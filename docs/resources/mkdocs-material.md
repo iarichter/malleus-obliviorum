@@ -14,6 +14,25 @@ tags:
     * [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
     * [Extended Syntax](https://www.markdownguide.org/extended-syntax/)
 
+### local server for dev work
+``` bat title="run terminal at root folder (./GitHub/malleus-obliviorum)" 
+.\venv\Scripts\activate
+python -m mkdocs serve
+```
+
+### CLI git process
+``` bat title="add, commit, and push"
+git add .
+git commit -m "Your commit message here"
+git push origin main
+::
+:: OR...just use the bat file I made
+::
+commitToGitHub.bat 'commitYour commit message here' 
+```
+### deploying to GitHub
+All handled by GitHub actions with current set up. Should run with every commit to the repo.
+
 ??? info "Language Shortcodes"
     * Cucumber ('*.feature')
     * abap ('*.abap')
@@ -142,22 +161,3 @@ tags:
     * xquery ('.xqy', '.xquery')
     * xslt ('.xsl', '.xslt')
     * yaml ('.yaml', '.yml')
-
-### local server for dev work
-``` bat title="run terminal at root folder (./GitHub/malleus-obliviorum)" 
-.\venv\Scripts\activate
-python -m mkdocs serve
-```
-
-### CLI git process
-``` bat title="add, commit, and push"
-git add .
-git commit -m "Your commit message here"
-git push origin main
-::
-:: OR...just use the bat file I made
-::
-commitToGitHub.bat 'commitYour commit message here' 
-```
-### deploying to GitHub
-All handled by GitHub actions with current set up. Should run with every commit to the repo. 

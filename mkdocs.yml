@@ -1,10 +1,11 @@
 site_name: MALLEUS OBLIVIORUM
 nav:
   - home: index.md
-  - about: iar.md
+  - about me: iar.md
   - knowledge base: kbindex.md
 theme:
   name: material
+  favicon: images/favicon.png
   custom_dir: overrides
   icon:
     logo: custom/iarcairnfont
@@ -17,7 +18,7 @@ theme:
         name: Switch to dark mode
       primary: custom
       accent: custom
-    # Palette toggle for dark mode
+    # Palette toggle for light mode
     - scheme: slate
       toggle:
         icon: material/brightness-4

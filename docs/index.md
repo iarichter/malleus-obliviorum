@@ -1,7 +1,7 @@
 # home
 hello,  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you've found my little corner of the internet  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my own personal ["malleus obliviorum"](areas/malleusobliviorum.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my own personal ["malleus obliviorum"](areas/malleus-obliviorum.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stay a while and explore  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or [connect](mailto:ian.a.richter@gmail.com)  
 --IAR
@@ -11,8 +11,7 @@ hello,
 * [sharepoint storage clean up](projects/sharepoint.md) 
 * [last.fm multiple users stats](projects/lastfm.md)
 ## about me
-* [portfolio ideas](projects/portfolio.md)
-* background
+* [CV](iar.md)
 * values
 * philosophy of technology
 
