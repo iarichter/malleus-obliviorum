@@ -1,5 +1,5 @@
 # Define the path to your main directory
-$docsPath = "./docs"
+$docsPath = "../docs"
 
 # Initialize an empty array to store results
 $resultArray = @()
