@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Build KB Index
         shell: pwsh
-        run: |
-           .\scripts\rebuild-kb-index.ps1
+        run: | 
+          ./scripts/rebuild-kb-index.ps1
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -32,5 +32,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-glightbox 
       - run: mkdocs gh-deploy --force
