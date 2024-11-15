@@ -40,6 +40,7 @@ copyright: Copyright &copy; 2024 Ian Richter
 plugins:
   - search
   - tags
+  - glightbox
 markdown_extensions:
   - attr_list
   - md_in_html

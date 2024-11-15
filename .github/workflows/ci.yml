@@ -7,6 +7,12 @@ on:
 permissions:
   contents: write
 jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Build KB Index
+        shell: pwsh
+        run: ./scripts/rebuild-kb-index.ps1
   deploy:
     runs-on: ubuntu-latest
     steps:

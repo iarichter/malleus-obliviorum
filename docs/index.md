@@ -1,19 +1,19 @@
 # home
-hello,  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you've found my little corner of the internet  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my own personal ["malleus obliviorum"](areas/malleus-obliviorum.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stay a while and explore  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or [connect](mailto:ian.a.richter@gmail.com)  
+hello,
+<div class=indented-intro>you've found my little corner of the internet<br>
+my own personal <a href="areas/malleus-obliviorum">"<em>malleus obliviorum</em>"</a><br>
+stay a while and explore<br>
+or <a href="mailto:ian.a.richter@gmail.com">connect</a><br></div>
 --IAR
 ## project showcase
-* [servicenow > jira automation](projects/snowJira.md)
+* [servicenow > jira automation](projects/snow-jira.md)
 * [spotify playlist scripts](projects/spotify.md)
 * [sharepoint storage clean up](projects/sharepoint.md) 
 * [last.fm multiple users stats](projects/lastfm.md)
 ## about me
 * [CV](iar.md)
 * values
-* philosophy of technology
+* goals
 
 </br>
 

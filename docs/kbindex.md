@@ -7,7 +7,7 @@ home for my thoughts, notes, ideas, and concepts
     * [initial thoughts on this site](projects/portfolio.md)
     * [sharepoint admin work](projects/sharepoint.md)
     * [slack migration automation](projects/slack.md)
-    * [new Jira project automation from ServiceNow](projects/snowJira.md)
+    * [new Jira project automation from ServiceNow](projects/snow-jira.md)
     * [spotify auto playlists](projects/spotify.md)
 
 === "areas"

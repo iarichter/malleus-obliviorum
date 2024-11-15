@@ -6,6 +6,11 @@
     --md-primary-fg-color--dark:  #FFA724;
     --md-accent-fg-color--dark: #6564DB;
   }
+  .indented-intro {
+    padding-left: 40px;
+    margin-top: -16px;
+    margin-bottom: -16px;
+  }
   .md-content__inner li {
     line-height: 1;
   }
@@ -15,7 +20,6 @@
   .md-content__inner h2 {
     line-height: 1;
   }
-
   .md-typeset h3 {
     line-height: 1;
     margin: auto;

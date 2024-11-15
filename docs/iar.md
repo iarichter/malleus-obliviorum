@@ -11,7 +11,7 @@ I am a builder. I like to make things and make things better. It's probably why 
 
 I'm also highly conceptual and systematic. It's probably why I got my MLIS. Who else is figuring out how to organize all the details of the world but librarians?
 
-What's better than building [something](./images/lego-spaceship-i-built-one-holiday-out-of-spare-parts.png)? Building a system. Building a process. It's probably why I work in tech.  
+So what's better than building [something](./images/lego-spaceship-i-built-one-holiday-out-of-spare-parts.png)? Building a [process](./projects/snow-jira.md). Building a [system](kbindex.md). It's probably why I work in tech.  
 
 ## professional trajectory
 ``` mermaid
