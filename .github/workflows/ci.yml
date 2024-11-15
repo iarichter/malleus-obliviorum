@@ -13,7 +13,7 @@ jobs:
       - name: Build KB Index
         shell: pwsh
         run: | 
-          scripts/rebuild-kb-index.psi
+          scripts/rebuild-kb-index.ps1
   deploy:
     runs-on: ubuntu-latest
     steps:
