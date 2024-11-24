@@ -18,6 +18,7 @@ home for my thoughts, notes, ideas, and concepts
     * [CI/CD](resources/cicd.md)
     * [CODE method](resources/code.md)
     * [the cult of done](resources/cult-of-done.md)
+    * [deleuze](resources/deleuze.md)
     * [markdown and mkdocs notes](resources/mkdocs-material.md)
     * [PARA](resources/para.md)
 
