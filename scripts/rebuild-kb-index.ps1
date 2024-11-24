@@ -7,6 +7,7 @@ $resultArray = @()
 
 # Get all subdirectories within the "docs" directory (projects, areas, resources, archive)
 $subfolders = Get-ChildItem -Path $docsPath -Directory
+Write-Host $subfolders
 <#
 # Loop through each subfolder
 foreach ($folder in $subfolders) {
