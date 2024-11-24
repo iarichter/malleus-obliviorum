@@ -1,0 +1,66 @@
+:root  {
+    --md-primary-fg-color:        #FFA724;
+    --md-accent-fg-color:         #6564DB;
+    --md-primary-fg-color--light: #FFA724;
+    --md-accent-fg-color--light: #6564DB;
+    --md-primary-fg-color--dark:  #FFA724;
+    --md-accent-fg-color--dark: #6564DB;
+  }
+  .indented-intro {
+    padding-left: 40px;
+    margin-top: -16px;
+    margin-bottom: -16px;
+  }
+  .md-content__inner li {
+    line-height: 1;
+  }
+  .md-content__inner ul {
+    line-height: 1;
+  }
+  .md-content__inner h2 {
+    line-height: 1;
+  }
+  .md-typeset h3 {
+    line-height: 1;
+    margin: auto;
+  }
+  .md-typeset h2 {
+    line-height: 1;
+    margin: auto;
+  }
+  #home {
+    display: none;
+  }
+  #md-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .md-nav__title {
+    font-size: 18px;
+  }
+  .md-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .md-button-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+  }
+.md-typeset .admonition.info, .md-typeset details.info {
+  border-color: #FFA724
+}
+.md-typeset .info>.admonition-title:before, .md-typeset .info>summary:before {
+  background-color: #FFA724;
+}
+.md-typeset .info>.admonition-title:after, .md-typeset .info>summary:after {
+  color: #FFA724;
+}
