@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 jobs:
-  build:
+  build-KB-Index:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,8 +15,10 @@ jobs:
         shell: pwsh
         run: | 
           ./scripts/rebuild-kb-index.ps1
+      - uses: stefanzweifel/git-auto-commit-action@v5
   deploy:
     runs-on: ubuntu-latest
+    needs: build-KB-Index
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
