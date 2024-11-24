@@ -7,8 +7,7 @@ $resultArray = @()
 
 # Get all subdirectories within the "docs" directory (projects, areas, resources, archive)
 $subfolders = Get-ChildItem -Path $docsPath -Directory
-Write-Host $subfolders
-<#
+
 # Loop through each subfolder
 foreach ($folder in $subfolders) {
     # Get all markdown files in the current subfolder
@@ -113,4 +112,3 @@ for ($i = 0; $i -lt $kbIndexContent.Count; $i++) {
 $updatedContent | Set-Content -Path $kbIndexPath
 
 Write-Output "kbindex.md has been updated successfully."
-#>
