@@ -2,8 +2,10 @@
 title: PARA
 layout: template
 filename: para.md
+skipKBindex: true
 tags:
     - documentation
+    - second-brain
 ---
 
 The acronym "PARA" stands for:  

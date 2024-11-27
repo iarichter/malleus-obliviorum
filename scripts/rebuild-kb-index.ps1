@@ -5,13 +5,17 @@ Get-Location
 # Initialize an empty array to store results
 $resultArray = @()
 
+# Define the list of folder names to match with sections in kbindex.md
+$sections = @("projects", "areas", "resources", "archive")
+$excludedTags = @("noble-creature")
+
 # Get all subdirectories within the "docs" directory (projects, areas, resources, archive)
-$subfolders = Get-ChildItem -Path $docsPath -Directory
+$subfolders = Get-ChildItem -Path $docsPath -Directory | Where-Object { $sections -contains $_.name }
 
 # Loop through each subfolder
 foreach ($folder in $subfolders) {
     # Get all markdown files in the current subfolder
-    $markdownFiles = Get-ChildItem -Path $folder.FullName -Filter "*.md" 
+    $markdownFiles = Get-ChildItem -Path $folder.FullName -Filter "*.md"
     
     # Loop through each markdown file
     foreach ($file in $markdownFiles) {
@@ -21,6 +25,8 @@ foreach ($folder in $subfolders) {
         # Initialize variables for title and filename
         $title = ""
         $filename = ""
+        $tags = @()
+        $tagBlock = ''
 
         # Loop through the lines to find 'title' and 'filename' metadata in YAML
         foreach ($line in $content) {
@@ -30,9 +36,22 @@ foreach ($folder in $subfolders) {
             elseif ($line -match "^filename:\s*(.+)$") {
                 $filename = $matches[1].Trim()
             }
-            
-            # Break out of the loop if both title and filename have been found
-            if ($title -ne "" -and $filename -ne "") {
+            # Check for the start of the tags block
+            elseif ($line -match "^tags:\s*$") {
+                $tagBlock = $true
+            }
+            # Collect lines with tags (four spaces, hyphen, space, and the tag value)
+            elseif ($tagBlock -and $line -match "^\s{4}-\s+(.+)$") {
+                $tags += $matches[1].Trim()
+            }
+            # Reset the tag block if the line no longer matches the tag format
+            elseif ($tagBlock -and $line -notmatch "^\s{4}-\s+(.+)$") {
+                $tagBlock = $false
+            }
+
+            # Break out of the loop if title and filename are found (optional for optimization)
+            if ($title -ne "" -and $filename -ne "" -and $tagBlock -eq $false) {
+                # Remove the tags.Count condition if tags can be optional
                 break
             }
         }
@@ -44,7 +63,8 @@ foreach ($folder in $subfolders) {
         $resultArray += [pscustomobject]@{
             Title = $title
             Path  = $path
-            Name = $file.name
+            Name  = $file.name
+            Tags  = $tags
         }
     }
 }
@@ -59,9 +79,6 @@ $kbIndexPath = "$docsPath\kbindex.md"
 # Read kbindex.md into an array of lines
 $kbIndexContent = Get-Content -Path $kbIndexPath
 
-# Define the list of folder names to match with sections in kbindex.md
-$sections = @("projects", "areas", "resources", "archive")
-
 # Dictionary to store array entries grouped by folder name
 $groupedEntries = @{}
 
@@ -71,7 +88,7 @@ foreach ($entry in $resultArray) {
     if (-not $groupedEntries.ContainsKey($folderName)) {
         $groupedEntries[$folderName] = @()
     }
-    $groupedEntries[$folderName] += $entry
+    $groupedEntries[$folderName] += $entry | Where-Object {-not ($_.Tags | Where-Object { $excludedTags -contains $_ })}
 }
 
 # Initialize an array to store the updated content of kbindex.md
@@ -82,7 +99,7 @@ for ($i = 0; $i -lt $kbIndexContent.Count; $i++) {
     $line = $kbIndexContent[$i]
 
     # Check if the line matches one of the section headers
-    $matchingSection = $sections | Where-Object { $line -eq "=== `"$_`""}
+    $matchingSection = $sections | Where-Object { $line -eq "=== `"$_`"" }
     if ($matchingSection) {
         # Add the header line to the updated content
         $updatedContent += $line
@@ -112,3 +129,20 @@ for ($i = 0; $i -lt $kbIndexContent.Count; $i++) {
 $updatedContent | Set-Content -Path $kbIndexPath
 
 Write-Output "kbindex.md has been updated successfully."
+<# build this later?
+$distinctTags = $resultArray.tags | Sort-Object | Get-Unique
+foreach ($tag in $distinctTags) {
+    # Output the current tag
+    Write-Host "Tag: $tag"
+    
+    # Find all records in $resultArray that have the current tag
+    $matchingPages = $resultArray | Where-Object { $_.Tags -contains $tag }
+    
+    # Output the matching records
+    foreach ($page in $matchingPages) {
+        Write-Host "  - Title: $($page.Title), Filename: $($page.Path)"
+    }
+    
+    Write-Host "" # Add an empty line for better readability
+}
+#>

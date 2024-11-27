@@ -4,6 +4,7 @@ home for my thoughts, notes, ideas, and concepts
 ## knowledge by actionability
 === "projects"
     * [last.fm user stats](projects/lastfm.md)
+    * [NOBLE CREATURE](projects/noble-creature.md)
     * [initial thoughts on this site](projects/portfolio.md)
     * [sharepoint admin work](projects/sharepoint.md)
     * [slack migration automation](projects/slack.md)
@@ -18,11 +19,14 @@ home for my thoughts, notes, ideas, and concepts
     * [CI/CD](resources/cicd.md)
     * [CODE method](resources/code.md)
     * [the cult of done](resources/cult-of-done.md)
+    * [deleuze](resources/deleuze.md)
     * [markdown and mkdocs notes](resources/mkdocs-material.md)
     * [PARA](resources/para.md)
 
 === "archive"
 
+## knowledge by tags
+    * (under construction)
 
 ### create new knowledge base page quick links:
 <p>
